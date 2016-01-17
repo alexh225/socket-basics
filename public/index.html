@@ -17,12 +17,30 @@
 <body>
 
     <div class="container">
-        <div class="well well-lg">
-            HELLO WORLD!</div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="page-header">
+                Sockets IO Playground
+                </h2>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="input-group">
+                    <span class="input-group-addon">Message:</span>
+                    <input id="msg-text" type="text" class="form-control" placeholder="Your Message">
+
+                    <div class="input-group-btn">
+                        <button id="msg-submit" class="btn btn-danger" type="submit">Submit Message</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.4/socket.io.min.js"></script>
     <script src="js/app.js"></script>
 
