@@ -10,10 +10,11 @@ var $msgContainer = $('#msg-container');
         });
 
         socket.on('message', function (message) {
+            var momentTimestamp = moment.utc(message.timestamp);
             console.log('New message');
             console.log(message.text);
             
-            $msgContainer.append('<li class="list-group-item">' + message.text + '</li>')
+            $msgContainer.append('<li class="list-group-item"><span class="label label-default">' + momentTimestamp.local().format('hh:mm') + '</span> ' + message.text + '</li>')
             
         });
 
